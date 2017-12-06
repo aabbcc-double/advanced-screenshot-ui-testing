@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="9nm-xq-8nv">
+                                <rect key="frame" x="16" y="36" width="343" height="615"/>
+                                <subviews>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hello world" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9Y4-1w-ooj" customClass="ABCDAutoResizingTextView">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="52"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="text_view"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="automaticallyScrollSuperview" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </textView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESP-fk-i3K">
+                                        <rect key="frame" x="0.0" y="68" width="343" height="48"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <accessibility key="accessibilityConfiguration" identifier="save_button"/>
+                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="30"/>
+                                        <state key="normal" title="Button">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="ESP-fk-i3K" firstAttribute="trailing" secondItem="9Y4-1w-ooj" secondAttribute="trailing" id="757-NF-k73"/>
+                                    <constraint firstAttribute="bottom" secondItem="ESP-fk-i3K" secondAttribute="bottom" id="7LL-lk-aYJ"/>
+                                    <constraint firstItem="9Y4-1w-ooj" firstAttribute="width" secondItem="9nm-xq-8nv" secondAttribute="width" id="9cL-Bj-JsL"/>
+                                    <constraint firstItem="9Y4-1w-ooj" firstAttribute="leading" secondItem="9nm-xq-8nv" secondAttribute="leading" id="Nky-nJ-uW8"/>
+                                    <constraint firstItem="ESP-fk-i3K" firstAttribute="centerX" secondItem="9Y4-1w-ooj" secondAttribute="centerX" id="Vfb-AB-U4s"/>
+                                    <constraint firstAttribute="trailing" secondItem="9Y4-1w-ooj" secondAttribute="trailing" id="W6L-mv-oBy"/>
+                                    <constraint firstItem="ESP-fk-i3K" firstAttribute="leading" secondItem="9Y4-1w-ooj" secondAttribute="leading" id="dZ1-ob-E1X"/>
+                                    <constraint firstItem="ESP-fk-i3K" firstAttribute="top" secondItem="9Y4-1w-ooj" secondAttribute="bottom" constant="16" id="l6G-pN-Grb"/>
+                                    <constraint firstItem="9Y4-1w-ooj" firstAttribute="top" secondItem="9nm-xq-8nv" secondAttribute="top" id="xvJ-Z0-ujB"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9nm-xq-8nv" secondAttribute="bottom" constant="16" id="5eQ-Bz-HJT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9nm-xq-8nv" secondAttribute="trailing" constant="16" id="NgK-TH-5L5"/>
+                            <constraint firstItem="9nm-xq-8nv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="gFX-pY-GXb"/>
+                            <constraint firstItem="9nm-xq-8nv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="o4r-pW-jYL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
